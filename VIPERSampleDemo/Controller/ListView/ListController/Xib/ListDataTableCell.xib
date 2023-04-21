@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="ListDataTableCell" customModule="VIPERSampleDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tOD-rV-dPO">
+                        <rect key="frame" x="20" y="10" width="280" height="180"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tG3-Ap-KHj">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="120"/>
+                                <color key="backgroundColor" name="BtnTitle"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="i3c-L7-3O3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dummy Data" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNM-fg-zo7">
+                                <rect key="frame" x="0.0" y="120" width="280" height="60"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
+                                <color key="textColor" name="BtnTitle"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="TitleColor"/>
+                        <constraints>
+                            <constraint firstItem="tG3-Ap-KHj" firstAttribute="top" secondItem="tOD-rV-dPO" secondAttribute="top" id="5ox-cG-epx"/>
+                            <constraint firstItem="QNM-fg-zo7" firstAttribute="leading" secondItem="tOD-rV-dPO" secondAttribute="leading" id="8xg-gZ-Taw"/>
+                            <constraint firstAttribute="trailing" secondItem="tG3-Ap-KHj" secondAttribute="trailing" id="J8d-58-a3Y"/>
+                            <constraint firstAttribute="trailing" secondItem="QNM-fg-zo7" secondAttribute="trailing" id="QQG-jq-MSG"/>
+                            <constraint firstItem="tG3-Ap-KHj" firstAttribute="leading" secondItem="tOD-rV-dPO" secondAttribute="leading" id="dT3-x7-SgU"/>
+                            <constraint firstAttribute="bottom" secondItem="QNM-fg-zo7" secondAttribute="bottom" id="oCh-zg-0Jp"/>
+                            <constraint firstItem="QNM-fg-zo7" firstAttribute="top" secondItem="tG3-Ap-KHj" secondAttribute="bottom" id="pit-eI-b1w"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="tOD-rV-dPO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="2qP-cQ-Z5Y"/>
+                    <constraint firstAttribute="bottom" secondItem="tOD-rV-dPO" secondAttribute="bottom" constant="10" id="9pX-7H-XJT"/>
+                    <constraint firstItem="tOD-rV-dPO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="N42-xT-GLg"/>
+                    <constraint firstAttribute="trailing" secondItem="tOD-rV-dPO" secondAttribute="trailing" constant="20" id="cDd-Ll-dj8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imgVIew" destination="tG3-Ap-KHj" id="aoW-H8-HcZ"/>
+                <outlet property="lblTitle" destination="QNM-fg-zo7" id="YA1-ml-TzK"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="20"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="BtnTitle">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TitleColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
